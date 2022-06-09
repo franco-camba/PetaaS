@@ -4,7 +4,7 @@ resource "random_pet" "console_password" {
 }
 
 variable "prefix" {
-    value = "default"
+    default = "default"
 }
 
 output "pet_name" {
