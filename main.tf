@@ -47,11 +47,11 @@ output "fifth_pet_name" {
     value = random_pet.fifth.id
 }
 
-# resource "random_pet" "sixth" {
-#     length = 5
-#     prefix = var.prefix
-# }
+resource "random_pet" "sixth" {
+    length = 3
+    prefix = var.prefix
+}
 
-# output "sixth_pet_name" {
-#     value = random_pet.sixth.id
-# }
+output "sixth_pet_name" {
+    value = random_pet.sixth.id
+}
